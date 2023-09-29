@@ -5,6 +5,6 @@ def call(String version, String artifactPath, String targetPath) {
             passwordVariable: 'PASS'
         )]) {
             sh "curl -u $USER:$PASS -X PUT -T ${artifactPath} ${targetPath}"
-            echo "Uploaded JAR artifact to Artifactory: ${targetPath}"
+            echo "Uploaded JAR artifact assignment to Artifactory: ${targetPath} of version ${version} "
         }      
 }
