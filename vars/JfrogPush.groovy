@@ -1,4 +1,4 @@
-def call(String artifactPath, String targetPath) {
+def call(String version, String artifactPath, String targetPath) {
         withCredentials([usernamePassword(
             credentialsId: 'jfrog',
             usernameVariable: 'USER',
